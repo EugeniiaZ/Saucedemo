@@ -18,7 +18,6 @@ public class LoginTest {
 
         Assert.assertEquals(message, "Epic sadface: Username and password do not match any user in this service");
         driver.quit();
-
     }
 
     @Test
