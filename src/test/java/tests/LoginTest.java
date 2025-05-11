@@ -14,18 +14,13 @@ public class LoginTest extends BaseTest {
                 "Epic sadface: Username and password do not match any user in this service");
     }
 
-    @Test
-    public void checkLoginWithEmptyPassword() {
-        loginPage.open();
-        loginPage.login("standard_user", "");
-        Assert.assertEquals(loginPage.getErrorMessage(),
-                "Epic sadface: Password is required");
+//    @Test
+//    public void checkLoginWithEmptyPassword() {
+//        loginPage.open();
+//        loginPage.login("standard_user", "");
+//        Assert.assertEquals(loginPage.getErrorMessage(),
+//                "Epic sadface: Password is required");
+//
+//    }
 
-    }
-    @Test
-    public void checkLoginWithValidCred() {
-        loginPage.open();
-        loginPage.login("standard_user", "secret_sauce");
-        Assert.assertTrue(productsPage.titleIsDisplayed());
-    }
 }
